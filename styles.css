@@ -1,52 +1,157 @@
-* {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
-    list-style: none;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-*,*::before,*::after {
-    box-sizing: border-box;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 body {
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.6;
 }
 
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: ‘’;
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
 
 .navbarphone {
-    display:none;
+    display: none;
 }
 
 .navbar {
     padding-left: 15%;
     padding-right: 15%;
     font-size: 20px;
-    
+
     background-color: #aa0601;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     display: flex;
-    flex-wrap:wrap;
-    max-width:1920px;
+    flex-wrap: wrap;
+    max-width: 1920px;
     padding-bottom: 1rem;
     padding-top: 1rem;
-   
+
 
 }
 
@@ -116,9 +221,9 @@ footer {
 
 .info {
     padding-top: 2rem;
-    display:flex;
-    justify-content:space-between;
-    
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .list {
@@ -133,19 +238,19 @@ footer {
     text-decoration: none;
 }
 
-.community img { 
+.community img {
     width: 50px;
 }
 
 
-.phone img { 
+.phone img {
     width: 30px;
-    
+
 }
 
 .mail img {
     width: 30px;
-    
+
 }
 
 
@@ -155,8 +260,8 @@ h4 {
 }
 
 .Copyright {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     column-gap: 2rem;
 }
 
@@ -172,29 +277,31 @@ h4 {
 @media (max-width: 768px) {
 
     .navbar {
-        padding-left:36px;
-        padding-right:36px;
-      }
-      .ul {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .ul {
         flex-direction: column;
     }
-      .faq{
-        padding-left:36px;
-        padding-right:36px;
-      }
-      
-      .info{
-        padding-left:36px;
-        padding-right:36px;
-      }
-      
-      .community{
+
+    .faq {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .info {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .community {
         gap: 16px;
-      }
-      
-      .community img{
-      width: 40px;
-      height: auto;
+    }
+
+    .community img {
+        width: 40px;
+        height: auto;
     }
 
     .faq-item {
@@ -204,22 +311,25 @@ h4 {
 
 @media(max-width: 375px) {
 
-    .header{
-       display: none;
+    .header {
+        display: none;
     }
-    .navbar{
+
+    .navbar {
         display: block;
         background-color: #AA0601;
-        
+
     }
-    .navbar ul{
+
+    .navbar ul {
         display: flex;
         justify-content: space-between;
         margin: 0;
-        
- 
+
+
     }
-    .navbar li{
+
+    .navbar li {
         border: #fff 1px solid;
         width: 50%;
         text-align: center;
@@ -228,73 +338,82 @@ h4 {
         padding-bottom: 5px;
         justify-content: space-around;
     }
-    ..navbar li a{
+
+    ..navbar li a {
         color: #fff;
         display: block;
         text-decoration: none;
         text-align: center;
     }
-    h1{
+
+    h1 {
         font-size: 24px;
         padding-left: 10px;
         line-height: 48px;
     }
-    h2{
+
+    h2 {
         font-size: 24px;
         line-height: 50px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
         line-height: 50px;
     }
-    .list{
+
+    .list {
         padding-top: 10px;
     }
-    .list li{
+
+    .list li {
         display: none;
     }
-    .info{
+
+    .info {
         margin: 0;
     }
-    .footer{
+
+    .footer {
         padding-left: 15px;
         padding-right: 15px;
         margin-bottom: 10px;
         position: relative;
     }
-    .community{
+
+    .community {
         position: absolute;
-        top: 40px;;right: 0;
+        top: 40px;
+        ;
+        right: 0;
     }
-    .community img{
+
+    .community img {
         width: 24px;
     }
-    h4{
+
+    h4 {
         padding-left: 10px;
         font-size: 16px;
         font-weight: normal
     }
-    .phone img{
+
+    .phone img {
         width: 25px;
     }
-    .mail img{
+
+    .mail img {
         width: 25px;
     }
+
     .copyright {
         flex-direction: column;
         margin: 0;
-    
+
     }
-    .copyright li{
+
+    .copyright li {
         flex-direction: column;
         padding: 5px;
-   }
     }
-
-
-
-
-
-
-
-
+}
