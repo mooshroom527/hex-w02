@@ -315,13 +315,13 @@ h4 {
         display: none;
     }
 
-    .navbar {
+    .navbarphone {
         display: block;
         background-color: #AA0601;
 
     }
 
-    .navbar ul {
+    .navbarphone ul {
         display: flex;
         justify-content: space-between;
         margin: 0;
@@ -329,9 +329,9 @@ h4 {
 
     }
 
-    .navbar li {
+    .navbarphone li {
         border: #fff 1px solid;
-        width: 80%;
+        width: 50%;
         text-align: center;
         display: flex;
         padding-top: 5px;
@@ -339,7 +339,7 @@ h4 {
         justify-content: space-around;
     }
 
-    ..navbar li a {
+    .navbarphone li a {
         color: #fff;
         display: block;
         text-decoration: none;
@@ -375,17 +375,15 @@ h4 {
     }
 
     .footer {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 8px;
         position: relative;
     }
 
     .community {
         position: absolute;
-        top: 40px;
-        ;
-        right: 0;
+        top: 40px; right: 0;
     }
 
     .community img {
@@ -393,7 +391,7 @@ h4 {
     }
 
     h4 {
-        padding-left: 10px;
+        padding-left: 8px;
         font-size: 16px;
         font-weight: normal
     }
