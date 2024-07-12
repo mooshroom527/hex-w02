@@ -330,8 +330,8 @@ h4 {
     }
 
     .navbarphone li {
-        border: #fff 1px solid;
-        width: 90%;
+        border: 1px solid white;
+        width: 50%;
         text-align: center;
         display: flex;
         padding-top: 5px;
@@ -341,7 +341,7 @@ h4 {
 
     .navbarphone li a {
         color: #fff;
-        display: block;
+        display: inline-block;
         text-decoration: none;
         text-align: center;
     }
