@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbarphone {
+    display:none;
+}
+
+.navbar {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+    
+    background-color: #aa0601;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-wrap:wrap;
+    max-width:1920px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+   
+
+}
+
+.navbar img {
+    width: 80px;
+}
+
+
+ul {
+    display: flex;
+    column-gap: 2rem;
+
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/*中間*/
+main {
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+/*Ｑ＆Ａ*/
+
+h1 {
+    font-size: 48px;
+    color: #000000;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-left: 8px solid #AA0601;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+
+/*頁尾*/
+
+footer {
+    background-color: #aa0601;
+    color: #fff;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.info {
+    padding-top: 2rem;
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.list {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.community {
+    text-align: right;
+    column-gap: 1rem;
+    text-decoration: none;
+}
+
+.community img { 
+    width: 50px;
+}
+
+
+.phone img { 
+    width: 30px;
+    
+}
+
+.mail img {
+    width: 30px;
+    
+}
+
+
+h4 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.Copyright {
+    display:flex;
+    justify-content:space-between;
+    column-gap: 2rem;
+}
+
+
+
+.border {
+    border-top: 1px solid #ffffff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding-left:36px;
+        padding-right:36px;
+      }
+      .ul {
+        flex-direction: column;
+    }
+      .faq{
+        padding-left:36px;
+        padding-right:36px;
+      }
+      
+      .info{
+        padding-left:36px;
+        padding-right:36px;
+      }
+      
+      .community{
+        gap: 16px;
+      }
+      
+      .community img{
+      width: 40px;
+      height: auto;
+    }
+
+    .faq-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width: 375px) {
+
+    .header{
+       display: none;
+    }
+    .navbar{
+        display: block;
+        background-color: #AA0601;
+        
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        
+ 
+    }
+    .navbar li{
+        border: #fff 1px solid;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: space-around;
+    }
+    ..navbar li a{
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+    h1{
+        font-size: 24px;
+        padding-left: 10px;
+        line-height: 48px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 50px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .list{
+        padding-top: 10px;
+    }
+    .list li{
+        display: none;
+    }
+    .info{
+        margin: 0;
+    }
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .community{
+        position: absolute;
+        top: 40px;;right: 0;
+    }
+    .community img{
+        width: 24px;
+    }
+    h4{
+        padding-left: 10px;
+        font-size: 16px;
+        font-weight: normal
+    }
+    .phone img{
+        width: 25px;
+    }
+    .mail img{
+        width: 25px;
+    }
+    .copyright {
+        flex-direction: column;
+        margin: 0;
+    
+    }
+    .copyright li{
+        flex-direction: column;
+        padding: 5px;
+   }
+    }
+
+
+
+
+
+
+
+
