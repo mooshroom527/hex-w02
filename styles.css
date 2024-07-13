@@ -141,7 +141,6 @@ table {
     padding-left: 15%;
     padding-right: 15%;
     font-size: 20px;
-
     background-color: #aa0601;
     justify-content: space-between;
     align-items: center;
@@ -213,6 +212,7 @@ p {
 /*頁尾*/
 
 footer {
+    max-width: 1920px;
     background-color: #aa0601;
     color: #fff;
     padding-left: 15%;
@@ -273,47 +273,51 @@ h4 {
     margin-top: 1rem;
 }
 
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
 
     .navbar {
-        padding-left: 36px;
-        padding-right: 36px;
+
+        margin: 0;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
 
-    .ul {
-        flex-direction: column;
+    ul {
+        column-gap: 1rem;
+        
     }
 
     .faq {
-        padding-left: 36px;
-        padding-right: 36px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
+    .faq-item {
+        margin-bottom: 1.5rem;
+    }
+}
 
-    .info {
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-
-    .community {
-        gap: 16px;
-    }
 
     .community img {
         width: 40px;
         height: auto;
     }
 
-    .faq-item {
-        margin-bottom: 1.5rem;
-    }
-}
+
+
+
+
+
 
 @media(max-width: 375px) {
 
 
 
     .navbarphone {
+        margin: 0;
         display: block;
         background-color: #AA0601;
         color:white;
@@ -381,7 +385,7 @@ h4 {
         display: none;
     }
 
-    .info {
+    .info { 
 
     }
 
